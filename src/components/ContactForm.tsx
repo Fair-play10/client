@@ -44,7 +44,7 @@ const [alert, setAlert] = useState<{
     console.log(values);
     toast.success("Message sent successfully!");
     try {
-      const response = await axiosInstance.post("/contact", values);
+      const response = await axiosInstance.post("/api/contacts", values);
       console.log("cantact successful:", response);
       setAlert({
         type: "success",

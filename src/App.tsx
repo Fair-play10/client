@@ -7,16 +7,17 @@ import { CartProvider } from "./components/CartContext";
 const queryClient = new QueryClient();
 
 const App = () => (
+  <CartProvider>
   <QueryClientProvider client={queryClient}>
       <BrowserRouter>
-          <CartProvider>
         <Routes>
           <Route path="/" element={<Index />} />
         </Routes>
-        </CartProvider>
       </BrowserRouter>
 
   </QueryClientProvider>
+  </CartProvider>
+
 );
 
 export default App;

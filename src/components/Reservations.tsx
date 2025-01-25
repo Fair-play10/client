@@ -32,7 +32,7 @@ export const Reservation = () => {
     e.preventDefault();
 
     try {
-      const response = await axiosInstance.post("/reservations", formData);
+      const response = await axiosInstance.post("/api/reservations",formData);
       console.log("Reservation successful:", response);
       setAlert({
         type: "success",

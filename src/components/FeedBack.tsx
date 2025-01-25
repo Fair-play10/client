@@ -4,31 +4,31 @@ import { Star, ChevronDown, ChevronUp, ChevronLeft, ChevronRight } from 'lucide-
 const SAMPLE_FEEDBACK = [
   {
     id: 1,
-    name: "Sarah Johnson",
+    name: "Lisa Marie",
     rating: 5,
-    text: "Absolutely amazing experience! The attention to detail and customer service exceeded all my expectations. I couldn't be happier with the results and would highly recommend to anyone looking for top-quality service.",
-    avatar: "/api/placeholder/40/40"
+    text: "Outstanding food and service! We had a variety of appetizers and entrees, the gnocchi and meat entrees were amazing. We also ordered dessert and variety of cocktails, everything was delicious.",
+    avatar: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f6/e7/99/default-avatar-2020-57.jpg?w=100&h=-1&s=1"
   },
   {
     id: 2,
-    name: "Michael Chen",
+    name: "Monty K",
     rating: 4,
     text: "Very professional and efficient service. While there's always room for minor improvements, the overall experience was great and I would definitely use again.",
-    avatar: "/api/placeholder/40/40"
+    avatar: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f6/df/99/default-avatar-2020-40.jpg?w=100&h=-1&s=1"
   },
   {
     id: 3,
     name: "Emma Davis",
     rating: 5,
     text: "Outstanding service from start to finish! The team was incredibly responsive and made sure every detail was perfect. This is exactly what premium service should look like.",
-    avatar: "/api/placeholder/40/40"
+    avatar: "https://dynamic-media-cdn.tripadvisor.com/media/photo-f/01/2e/70/8d/avatar014.jpg?w=100&h=-1&s=1"
   },
   {
     id: 4,
     name: "David Wilson",
     rating: 5,
     text: "Exceptional quality and service! The team went above and beyond to ensure everything was perfect. Highly recommended!",
-    avatar: "/api/placeholder/40/40"
+    avatar: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/bf/ae/52/jonathan-g.jpg?w=100&h=-1&s=1"
   }
 ];
 
@@ -37,7 +37,7 @@ const FeedbackCard = ({ feedback }) => {
   const shouldTruncate = feedback.text.length > 100;
   
   return (
-    <div className=" w-full  transform transition-all duration-300 hover:scale-105 hover:shadow-xl rounded-xl bg-white bg-opacity-90 p-6 shadow-lg ">
+    <div className=" w-full  transform transition-all duration-300 hover:scale-105 hover:shadow-xl rounded-xl bg-purple-300 bg-opacity-90 p-6 shadow-lg ">
       <div className="flex items-start space-x-4">
         <div className="animate-bounce-slow">
           <img
